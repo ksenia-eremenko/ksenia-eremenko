@@ -1,0 +1,27 @@
+.b-title {
+  &.bt12 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &.bt16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &.bt20 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  &.bt34 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  &.color4 {
+    color: $color4;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+}

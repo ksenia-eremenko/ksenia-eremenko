@@ -1,0 +1,57 @@
+.styled-btn {
+  @include animate;
+  text-align: center;
+  text-decoration: none!important;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  font-family: 'Work Sans', sans-serif;
+  &.styled-btn-1,
+  &.styled-btn-2 {
+    border-radius: 12px;
+    padding: 0px 15px;
+    min-height: 48px;
+    min-width: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color3;
+    color: $color1;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    &:after {
+      content:'';
+      min-height:inherit;
+      font-size: 0;
+    }
+  }
+  &.styled-btn-2 {
+    border-radius: 50%;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    min-width: inherit;
+    min-height: inherit;
+    background: $color1;
+    color: $color2;
+    border: 1px solid $color4;
+    &:after {
+      content:'';
+      min-height:inherit;
+      font-size: 0;
+    }
+  }
+
+  &.styled-btn-1 {
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba($color3, 0.5);
+    }
+  }
+  &.styled-btn-2 {
+    &:hover {
+      background: $color5;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.pagination {
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+  .styled-btn {
+    &+.styled-btn {
+      margin-left: 5px;
+    }
+    &.active {
+      background: $color5;
+    }
+  }
+}

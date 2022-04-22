@@ -1,0 +1,84 @@
+.form-style {
+  .f-item {
+    position: relative;
+    width: 100%;
+    & + .f-item {
+      margin-top: 20px;
+      @include nb {
+        margin-top: 15px;
+      }
+      @include tbmb {
+        margin-top: 10px;
+      }
+    }
+    .f-item-title {
+      margin-bottom: 5px;
+    }
+    .f-item-50 {
+      width: calc(50% - 10px);
+      @include nb {
+        width: calc(50% - 7.5px);
+      }
+      @include tb {
+        width: calc(50% - 5px);
+      }
+      @include mb {
+        width: 100%;
+      }
+      &+.f-item-50 {
+        @include mb {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    min-height: 48px;
+    height: 48px;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    padding: 0px 10px;
+    border-radius: 12px;
+    border: 1px solid $color2;
+    background-color: $color1;
+    color: $color4;
+    @include placeholder {
+      color: rgba($color4, 0.4);
+    };
+    &:focus {
+      color: $color4;
+      @include placeholder {
+        color: rgba($color4, 0.3);
+      };
+    }
+    &.error {
+      border-color: $colorError;
+      color: $colorError;
+      @include placeholder {
+        color: rgba($colorError, 0.3);
+      };
+    }
+    &:disabled {
+      color: rgba($color4, 0.5);
+    }
+  }
+  select {
+    color: $color2;
+    &:focus {
+      color: $color2;
+    }
+  }
+  textarea {
+    padding: 10px;
+    resize: none;
+    height: 120px;
+  }
+}

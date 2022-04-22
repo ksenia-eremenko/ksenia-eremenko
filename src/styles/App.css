@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content {
+    padding-top: 80px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}

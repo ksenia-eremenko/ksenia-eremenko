@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, svg {
+  display: block;
+}
+
+html {
+  height: 100%;
+  @include customScrollbar($color3, 7px, 5px, 0px, $color1);
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  color: $color2;
+  height: 100%;
+  font-weight: normal;
+  position: relative;
+  @include tbmb {
+    background-attachment: unset;
+  }
+}
+
+.container {
+  width: 1000px;
+  padding: 0px 10px 0px 10px;
+  @include clearfix;
+  display: block;
+  margin: auto;
+}
+
+
+@import
+"common/_b-paddings",
+"common/_b-titles",
+"common/_buttons",
+"common/_form";

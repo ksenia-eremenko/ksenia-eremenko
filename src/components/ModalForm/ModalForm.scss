@@ -1,0 +1,27 @@
+.modal-form-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0, 0.5);
+  z-index: 9999;
+
+  .modal-form-content {
+    padding: 20px;
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+
+    .styled-btn {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
